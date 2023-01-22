@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" inial-scale="1.0"> 
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<title>Encryption/Decryption</title>
+    </head>
+
+<body>
+        <div class="container">
+			<div class="logo">
+				<img id="main-logo" src="images/icons/main-logo.svg" alt="Logo">
+			</div>
+			<div class="input-site">
+				<div class="message">
+				  	<textarea id="message" required placeholder="Ingrese el texto aqui"></textarea>
+				</div>	
+				<div class="form-group buttons">
+				  	<button onclick="encrypt()" class = "btnBlue"><em>Encrypt</em></button>
+					<button onclick="decrypt()" class = "btnWhite">Decrypt</button>
+				</div>
+			</div>	
+			<div class="output-site">
+				<div class="frame-result">
+					<p id="result" class="hidden-background"></p>
+				</div>
+				<div class="form-group buttons">
+					<button onclick="copyToClipboard()" class = "btnBlue">Copy to clipboard</button>
+					<button onclick="outputToInput()" class = "btnWhite">Output to input</button>
+				</div>
+			</div>
+        </div>
+		
+<script src="/js/script.js"></script>
+</body>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yourusername">
+                <img src="images/icons/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername">
+                <img src="images/icons/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="michael.angulo@hotmail.es">
+                <img src="images/icons/email-icon.png" alt="Email">
+            </a>
+            <a href="https://github.com/yourusername">
+                <img src="images/icons/github-icon.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</html>
