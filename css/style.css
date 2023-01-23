@@ -30,7 +30,7 @@
 }
 
 .input-site {
-    margin: 0px 10% 2.3% 10%;
+    margin: 150px 10% 2.3% 10%;
     display: inline-block;
     width: 50%;
     min-height: 70%;
@@ -44,9 +44,9 @@
     display: inline-block;
     width: 20%;
     min-width: 13em;
-    min-height: 300px;
+    min-height: 280px;
     max-height: 90%;
-    padding: 20 % 5%;
+    padding: 5% 1% 2% 1%;
 }
 
 .message {
@@ -103,16 +103,9 @@ textarea:-ms-input-placeholder {
 	text-align: center;
 }
 
-.form-group.result {
-	
-    margin-top: 50px;
-    text-align: left;
-}
-
 .frame-result {
 	
-	min-height: 400px;
-	max-height: 800%;
+	height: 100%;
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	width: 100%;
@@ -120,7 +113,10 @@ textarea:-ms-input-placeholder {
 }
 
 #result {
-    background-color: #FFFFFF;
+	
+	background-color: #FFFFFF;
+	min-height: 80px;
+	height: 100%;
     width: 90%;
     align-content: center;
     padding-top: 0px;
