@@ -11,7 +11,7 @@
 
 .input-site {
 	
-	margin: 140px 10% 20px 10%;
+	margin: 100px 10% 2.3% 10%;
 	display: inline-block;
 	width: 50%;
 	height: 100%;
@@ -20,7 +20,7 @@
 
 .output-site {
 	
-	margin: 0px 1% 20px 1%;
+	margin: 0px 1% 2.3% 1%;
 	align-content: center;	
 	display: inline-block;
 	width: 20%;
@@ -58,7 +58,7 @@
 	margin: 6%;	
 	resize: none;
     width: 80%;
-	height: 450px;
+	height: 280px;
     border: none;
 	outline: none;
 	background-color: #F3F5FC;
@@ -167,7 +167,7 @@ button  {
 
 .frame-result {
 	
-	
+	height: 380px;
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	width: 100%;
@@ -182,7 +182,7 @@ button  {
 	align-content: center;
 	padding: 10px;
 	margin: 0 10px 0 10px;
-	height: 450px;
+	height: 77%;
 	border: none;
 	outline: none;
 	font-size: 18px;
