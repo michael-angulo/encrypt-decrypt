@@ -1,13 +1,21 @@
 * {
-	
+	overflow: hidden;
 		
 }
 
+.body {
+	
+	background-color: #F3F5FC;
+	
+}
+
 .container {
+	
 	position: relative;
 	height: 100%;
+	width: 100%;
 	display: block;
-	background-color: #F3F5FC;
+	
 }
 
 .logo {
@@ -22,41 +30,39 @@
 }
 
 .input-site {
-	
-	margin: 100px 10% 2.3% 10%;
-	display: inline-block;
-	width: 50%;
-	min-height: 70%;
-	max-height: 90%;
+    margin: 0px 10% 2.3% 10%;
+    display: inline-block;
+    width: 50%;
+    min-height: 70%;
+    max-height: 90%;
 		
 }
 
 .output-site {
-	
-	margin: 0px 1% 2.3% 1%;
-	align-content: center;	
-	display: inline-block;
-	width: 20%;
-	min-width: 13em;
-	min-height: 300px;
-	max-height: 90%;
+    margin1: 0% 1% 2.3% 1%;
+    align-content: center;
+    display: inline-block;
+    width: 20%;
+    min-width: 13em;
+    min-height: 300px;
+    max-height: 90%;
+    padding: 20 % 5%;
 }
 
 .message {
-	
-	align-content: center;
-	text-align: center;
-	display: block;
-	height: 100%;
-
+    align-content: center;
+    text-align: center;
+    display: block;
+    height: 100%;
+    
 }
 
 #message {	
 	
-	margin: 6%;	
+	margin: 2%;	
 	resize: none;
     width: 80%;
-	min-height: 10%;
+	min-height: 280px;
 	max-height: 90%;
     border: none;
 	outline: none;
@@ -67,7 +73,6 @@
 	font-style: normal;
 	font-size: 32px;
 	text-align: justify;
-	
 	
 }
 
@@ -98,43 +103,45 @@ textarea:-ms-input-placeholder {
 	text-align: center;
 }
 
-
-
 .form-group.result {
 	
     margin-top: 50px;
     text-align: left;
 }
 
-
-
 .frame-result {
-	min-height: 300px;
-	max-height: 80%;
+	
+	min-height: 400px;
+	max-height: 800%;
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	width: 100%;
-	padding: 10px;
+	padding: 50px 10px 10px 10px;
 }
 
 #result {
-	 
-	background-color: #FFFFFF;
-	width: 90%;
-	align-content: center;
-	padding: 10px;
-	margin: 0 10px 0 10px;
-	min-height: 250px;
-	border: none;
-	outline: none;
-	font-size: 18px;
-	word-wrap: break-word;
+    background-color: #FFFFFF;
+    width: 90%;
+    align-content: center;
+    padding-top: 0px;
+    margin-right: 10%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    min-height: 250px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    word-wrap: break-word;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 	
 }
 
 .hidden-background {
 	
-  	background-image: url("../images/img-output/Muñeco.svg");
+  	
+	background-image: url("../images/img-output/Muñeco.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -177,7 +184,7 @@ textarea:-ms-input-placeholder {
 
 button  {
 	
-	width: 150px;
+	width: 125px;
 	height: 50px;
     /* text button*/
     font-family: 'Inter';
@@ -225,6 +232,9 @@ button  {
 }
 
 /*Social links*/
+
+
+
 .social-links {
 	
 	position: absolute; /* esto hace que el footer se coloque siempre abajo */
@@ -258,27 +268,31 @@ button  {
 
 @media screen and (max-width: 768px) {
 
-	
+	* {
+	overflow: visible;
+		
+	}
 	.container {
 		
 		width: 100%;
-		height: 85%;
+		height: 100%;
+		
 	}
 	
-    .logo {
-        
-        left: 10px;
-        top: 10px;
+		.logo {
+		left: 10px;
+		top: -30px;
     }
 
 	.input-site {
 		padding: 1em;
-    	margin: 50px 1em 10px 1em;
+    	margin: 5em 1em 1em 1em;
 		display: block;
 		width: 90%;
-		height: 100%;
+		min-height: 100%;
 		
 	}
+	
 	.output-site {
 		
 		padding: 1em;
@@ -289,10 +303,14 @@ button  {
 	}
 	
 	.textEnterText {
-	
-	font-size: 12px;
+		
+		font-size: 12px;
 	}
 	
+	.frame-result {
+		min-height: 200px;
+	}
+		
 	.hidden-background {
     display: none;
 	}
@@ -300,4 +318,9 @@ button  {
 	.noText {
 		margin-top: 2em;
 	}
+	
+	.social-links {
+	
+		position: relative; /* esto hace que el footer se coloque siempre abajo */
+		bottom: 0;
 }
