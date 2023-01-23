@@ -4,6 +4,7 @@
 }
 
 .container {
+	position: relative;
 	height: 100%;
 	display: block;
 	background-color: #F3F5FC;
@@ -14,7 +15,8 @@
 	margin: 100px 10% 2.3% 10%;
 	display: inline-block;
 	width: 50%;
-	height: 100%;
+	min-height: 400px;
+	max-height: 90%;
 		
 }
 
@@ -25,7 +27,8 @@
 	display: inline-block;
 	width: 20%;
 	min-width: 13em;
-	height: 100%;
+	min-height: 400px;
+	max-height: 90%;
 }
 #main-logo {
 	
@@ -48,7 +51,7 @@
 	align-content: center;
 	text-align: center;
 	display: block;
-	
+	height: 100%;
 
 	
 }
@@ -58,7 +61,8 @@
 	margin: 6%;	
 	resize: none;
     width: 80%;
-	height: 280px;
+	min-height: 300px;
+	max-height: 100%;
     border: none;
 	outline: none;
 	background-color: #F3F5FC;
@@ -71,8 +75,6 @@
 	
 	
 }
-
-
 
 /*display: unline-block al section der*/
 /*edit placeholder*/
@@ -99,6 +101,74 @@ textarea:-ms-input-placeholder {
 	font-style: normal;
 	font-size: 32px;
 	text-align: center;
+}
+
+
+
+.form-group.result {
+	
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+
+.frame-result {
+	min-height: 400px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	width: 100%;
+	padding: 10px;
+}
+
+#result {
+	 
+	background-color: #FFFFFF;
+	width: 90%;
+	align-content: center;
+	padding: 10px;
+	margin: 0 10px 0 10px;
+	min-height: 250px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	word-wrap: break-word;
+	
+}
+
+.hidden-background {
+	
+  	background-image: url("../images/img-output/Muñeco.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+.noText {
+  display: block;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textNotFound {
+	
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #343a40;
+	line-height: 28.8px;
+	
+}
+.textEnterText {
+	
+	text-align: center;
+	font-weight: 400;
+	line-height: 20px;
+	font-size: 16px;
+	color: #495057;
+	margin-bottom: 20px;
 }
 
 .form-group.buttons {
@@ -158,83 +228,18 @@ button  {
 	height: 20px;
 }
 
-.form-group.result {
-    margin-top: 50px;
-    text-align: left;
-}
-
-
-
-.frame-result {
-	
-	height: 380px;
-	background-color: #FFFFFF;
-	border-radius: 24px;
-	width: 100%;
-	padding: 10px;
-}
-
-#result {
-	 
-	
-	background-color: #FFFFFF;
-	width: 90%;
-	align-content: center;
-	padding: 10px;
-	margin: 0 10px 0 10px;
-	height: 77%;
-	border: none;
-	outline: none;
-	font-size: 18px;
-	word-wrap: break-word;
-	
-}
-
-.hidden-background {
-  	background-image: url("../images/img-output/Muñeco.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 336px 304px;
-}
-
-.noText {
-  display: block;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.textNotFound {
-	
-	text-align: center;
-	margin-bottom: 20px;
-	font-weight: 700;
-	font-size: 24px;
-	color: #343a40;
-	line-height: 28.8px;
-	
-}
-.textEnterText {
-	
-	text-align: center;
-	font-weight: 400;
-	line-height: 20px;
-	font-size: 16px;
-	color: #495057;
-	margin-bottom: 20px;
-}
-
 /*Social links*/
 .social-links {
 	
+	position: absolute; /* esto hace que el footer se coloque siempre abajo */
+    bottom: 0; /* esto hace que el footer se coloque al borde inferior de la página */
+    width: 100%; /* esto hace que el footer ocupe toda la anchura de la página */
 	flex-shrink: 0;
 	height: 40px;
     display: flex;
     justify-content: center;
 	background-color: #576EF5;
 	padding: 5px;
-	position: static;
-	bottom: 0;
-	width: 100%;
 	
 }
     
