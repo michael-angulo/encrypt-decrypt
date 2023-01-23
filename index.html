@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width" inial-scale="1.0"> 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width" inial-scale="1"> 
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">		
 		<title>Encryption/Decryption</title>
     </head>
 
@@ -19,22 +19,28 @@
 				  	<textarea id="message" required placeholder="Ingrese el texto aqui"></textarea>
 				</div>	
 				<div class="form-group buttons">
-				  	<button onclick="encrypt()" class = "btnBlue"><em>Encrypt</em></button>
-					<button onclick="decrypt()" class = "btnWhite">Decrypt</button>
-				</div>
+					<button onclick="encrypt()" class = "btnEncrypt"><em>Encriptar</em></button>
+				  	<button onclick="decrypt()" class = "btnDecrypt"><em>Descriptar</em></button>
+              </div>
 			</div>	
-			<div class="output-site">
-				<div class="frame-result">
-					<p id="result" class="hidden-background"></p>
-				</div>
-				<div class="form-group buttons">
-					<button onclick="copyToClipboard()" class = "btnBlue">Copy to clipboard</button>
-					<button onclick="outputToInput()" class = "btnWhite">Output to input</button>
-				</div>
+				<div class="output-site">
+					<div class="frame-result">
+						<p id="result" class="hidden-background"></p>
+						<div class="noText">
+							<p class="textNotFound">Ningún mensaje fue encontrado</p>
+							<p class="textEnterText">Ingresa el texto que desees encriptar o desencriptar.</p>
+						</div>
+						<div class="form-group buttons">
+							<button onclick="outputToInput()" class = "btnOutIn"><img id=img-outin src="images/icons/out-in.png" alt="outIn"></button>
+							<button onclick="copyToClipboard()" class = "btnCopy"><em>Copiar</em></button>
+						</div>
+					</div>
+
+				
 			</div>
         </div>
 		
-<script src="/js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
     <footer>

@@ -20,6 +20,8 @@ function encrypt() {
     document.getElementById("result").innerHTML = result;
 	document.getElementById("result").innerText = result;
 	document.getElementById("result").classList.remove("hidden-background");
+	document.querySelector('.noText').style.display = 'none';
+		
     }
 }
 
@@ -45,6 +47,7 @@ function decrypt() {
     document.getElementById("result").innerHTML = result;
 	document.getElementById("result").innerText = result;
 	document.getElementById("result").classList.remove("hidden-background");
+	document.querySelector('.noText').style.display = 'none';
     }
 }
 

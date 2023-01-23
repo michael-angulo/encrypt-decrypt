@@ -1,22 +1,31 @@
 * {
 	
+		
 }
 
 .container {
-	
+	height: 100%;
+	display: block;
+	background-color: #F3F5FC;
 }
 
 .input-site {
-	margin: 140px 10% 0 10%;
+	
+	margin: 140px 10% 20px 10%;
 	display: inline-block;
-	width: 40%;
-	background-color: #FFFFFF;
-	align-content: center;
+	width: 50%;
+	height: 100%;
+		
 }
 
 .output-site {
+	
+	
+	align-content: center;	
 	display: inline-block;
-  	width: 30%;
+	width: 20%;
+	min-width: 13em;
+	height: 100%;
 }
 #main-logo {
 	
@@ -35,32 +44,34 @@
 }
 
 .message {
-	background-color: #F3F5FC;
-	padding: 10px;
-	border-radius: 24px;
+	
+	align-content: center;
+	display: block;
+	
+
+	
 }
 
-#message {	 
-	align-content: center;
-    width: 90%;
-	padding: 10px;
-	margin: 0 10px 0 10px;
+#message {	
+	
+	margin: 10px;	
+	resize: none;
+    width: 100%;
 	height: 450px;
     border: none;
 	outline: none;
 	background-color: #F3F5FC;
+	border-style: none;
+    color: #0A3871;
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 32px;
+	text-align: justify;
+	
 	
 }
 
-textarea {
-    color: #0A3871;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 32px;
-    text-align: left;
-    border-style: none;
-    background-color: #ffffff;
-}
+
 
 /*display: unline-block al section der*/
 /*edit placeholder*/
@@ -90,23 +101,25 @@ textarea:-ms-input-placeholder {
 }
 
 .form-group.buttons {
-	display: flex;
-    margin-top: auto;
-	padding: 4%;
-    text-align: center;
+
+	width: 100%;
+	display: inline-block;
+	padding-top: 2em;
+	text-align: center;
 }
 
 button  {
 	
-	width: 200px;
-	height: 67px;
+	width: 150px;
+	height: 50px;
     /* text button*/
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
+	
 }
 
-.btnBlue {
+.btnEncrypt, .btnCopy{
 	
 	/* Dark blue/dark-blue-300 */
 	background: #0A3871;
@@ -116,7 +129,7 @@ button  {
 	color: #FFFFFF;
 }
 
-.btnWhite {
+.btnDecrypt, .btnOutIn{
 	
 	/* Light gray */
 
@@ -130,6 +143,20 @@ button  {
 	color: #0A3871;
 }
 
+
+.btnOutIn {
+	
+	width: 4em;
+
+}
+
+	/* image out-in */
+#img-outin {
+	
+	width: 20px;
+	height: 20px;
+}
+
 .form-group.result {
     margin-top: 50px;
     text-align: left;
@@ -138,44 +165,80 @@ button  {
 
 
 .frame-result {
-	background-color: #F3F5FC;
-	padding: 10px;
+	
+	
+	background-color: #FFFFFF;
 	border-radius: 24px;
+	width: 100%;
+	padding: 10px;
 }
 
 #result {
+	 
+	
+	background-color: #FFFFFF;
 	width: 90%;
 	align-content: center;
 	padding: 10px;
 	margin: 0 10px 0 10px;
 	height: 450px;
-    border: none;
+	border: none;
 	outline: none;
-	background-color: #F3F5FC;
-
-    font-size: 18px;
+	font-size: 18px;
+	word-wrap: break-word;
+	
 }
 
 .hidden-background {
-  	background-image: url("images/img-output/Muñeco.svg");
+  	background-image: url("../images/img-output/Muñeco.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 336px 304px;
 }
 
+.noText {
+  display: block;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textNotFound {
+	
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #343a40;
+	line-height: 28.8px;
+	
+}
+.textEnterText {
+	
+	text-align: center;
+	font-weight: 400;
+	line-height: 20px;
+	font-size: 16px;
+	color: #495057;
+	margin-bottom: 20px;
+}
+
 /*Social links*/
 .social-links {
+	
+	flex-shrink: 0;
+	height: 40px;
     display: flex;
     justify-content: center;
 	background-color: #576EF5;
 	padding: 5px;
-	margin-top: 10px;
 	position: static;
 	bottom: 0;
 	width: 100%;
+	
 }
     
 .social-links a {
+	display: block;
     margin: 0 0.5em;
 }
 
@@ -189,4 +252,38 @@ button  {
 .social-links a:hover img {
     filter: grayscale(0);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+	
+	.container {
+		
+		width: 100%;
+		height: 100%;
+	}
+	
+	.input-site {
+		padding: 1em;
+    	margin: 100px 1em 10px 1em;
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+	}
+	.output-site {
+		
+		padding: 1em;
+    	margin: 0px 1em 1em 1em;
+    	display: block;
+		width: 85%;
+		height: 100%;
+	}
+	
+	.hidden-background {
+    display: none;
+	}
+	
+	.noText {
+		margin-top: 2em;
+	}
 }
