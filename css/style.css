@@ -20,7 +20,7 @@
 
 .output-site {
 	
-	
+	margin: 0px 1% 20px 1%;
 	align-content: center;	
 	display: inline-block;
 	width: 20%;
@@ -46,6 +46,7 @@
 .message {
 	
 	align-content: center;
+	text-align: center;
 	display: block;
 	
 
@@ -54,9 +55,9 @@
 
 #message {	
 	
-	margin: 10px;	
+	margin: 6%;	
 	resize: none;
-    width: 100%;
+    width: 80%;
 	height: 450px;
     border: none;
 	outline: none;
@@ -266,7 +267,7 @@ button  {
 		padding: 1em;
     	margin: 100px 1em 10px 1em;
 		display: block;
-		width: 100%;
+		width: 90%;
 		height: 100%;
 		
 	}
@@ -275,7 +276,7 @@ button  {
 		padding: 1em;
     	margin: 0px 1em 1em 1em;
     	display: block;
-		width: 85%;
+		width: 90%;
 		height: 100%;
 	}
 	
