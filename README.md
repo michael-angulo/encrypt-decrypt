@@ -48,7 +48,7 @@ gaitober" => "gato"
 
 - Un botón que copie el texto encriptado/desencriptado en el área de texto.
 
-- RESPONSIVE WEB DESIGN
+- Responsive Site
 
 
 
