@@ -21,6 +21,8 @@ function encrypt() {
 	document.getElementById("result").innerText = result;
 	document.getElementById("result").classList.remove("hidden-background");
 	document.querySelector('.noText').style.display = 'none';
+	document.querySelector('.btnCopy').classList.remove('hidden');
+    document.querySelector('.btnOutIn').classList.remove('hidden');
 		
     }
 }
@@ -48,6 +50,8 @@ function decrypt() {
 	document.getElementById("result").innerText = result;
 	document.getElementById("result").classList.remove("hidden-background");
 	document.querySelector('.noText').style.display = 'none';
+	document.querySelector('.btnCopy').classList.remove('hidden');
+    document.querySelector('.btnOutIn').classList.remove('hidden');
     }
 }
 
